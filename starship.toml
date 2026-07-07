@@ -1,0 +1,46 @@
+# ~/.config/starship.toml — Dracula-flavored prompt
+
+# Layout: directory + git info on line 1, then prompt symbol on line 2
+format = """
+$directory$git_branch$git_status$nodejs$python$rust$cmd_duration
+$character"""
+# Put a blank line before each new prompt for breathing room
+add_newline = false
+
+# The prompt symbol (the ❯ you type after). Green when last command
+# succeeded, red when it failed — instant feedback.
+[character]
+success_symbol = "[❯](#50fa7b)"
+error_symbol = "[❯](#ff5555)"
+
+[directory]
+style = "#bd93f9 bold"
+truncation_length = 1
+truncate_to_repo = true
+
+# Git branch — Dracula pink with a branch icon (needs the Nerd Font)
+[git_branch]
+symbol = " "
+style = "#ff79c6"
+
+# Git status (modified, staged, untracked, etc.) — Dracula yellow
+[git_status]
+style = "#f1fa8c"
+
+# Language/runtime versions — Dracula cyan, only show when relevant
+[nodejs]
+symbol = " "
+style = "#8be9fd"
+
+[python]
+symbol = " "
+style = "#8be9fd"
+
+[rust]
+symbol = " "
+style = "#8be9fd"
+
+# How long the last command took, if it was slow — Dracula orange
+[cmd_duration]
+min_time = 2000
+style = "#ffb86c"
