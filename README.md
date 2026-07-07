@@ -54,6 +54,7 @@ source ~/.zshrc
 |----------|--------|
 | `CMD + D` | Split pane left/right |
 | `CMD + SHIFT + D` | Split pane top/bottom |
+| `CMD + ← / → / ↑ / ↓` | Move focus between split panes |
 | `CMD + T` | New tab |
 | `CMD + [` / `CMD + ]` | Previous / next tab |
 | `CMD + 1`–`9` | Jump to tab by number |
